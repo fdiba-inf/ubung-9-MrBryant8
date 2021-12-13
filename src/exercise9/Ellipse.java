@@ -33,7 +33,7 @@ public class Ellipse {
         } while (!isValid());
     }
     public double calculatePerimeter() {
-        return  2*Math.PI*(Math.sqrt((a*a + b*b)/2));
+        return  Math.PI*(3*(a+b)-Math.sqrt((3*a+b)*(a+3*b)));
     }
 
     public double calculateArea() {
